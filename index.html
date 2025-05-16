@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores da Terra | Autêntica Culinária Italiana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Sabores da Terra</h1>
+                <p>Culinária Italiana Autêntica</p>
+            </div>
+            <nav>
+                <button id="menu-toggle" aria-label="Menu de navegação">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul id="main-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Sabores Autênticos da Itália</h2>
+            <p>Uma experiência gastronômica inesquecível no coração da cidade</p>
+            <a href="#reservas" class="btn">Faça sua Reserva</a>
+        </div>
+    </section>
+
+    <!-- Sobre o Restaurante -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossa História</h2>
+                <div class="divider"></div>
+                <p>Tradição e paixão em cada prato</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image"></div>
+                <div class="about-text">
+                    <p>Fundado em 2005 pela Chef Heloisa Bolognesi, o Sabores da Terra nasceu da paixão por trazer a autêntica culinária italiana para o Brasil. Nossa filosofia é simples: ingredientes frescos, técnicas tradicionais e muito amor em cada prato.</p>
+                    <p>Nosso restaurante é um pedaço da Itália em sua cidade. Da decoração à música, do aroma ao sabor, tudo foi criado para transportar nossos clientes para as charmosas trattorias italianas.</p>
+                    <p>Trabalhamos com ingredientes importados diretamente da Itália, além de produtos frescos de produtores locais. Nossa massa é feita diariamente em nossa cozinha, seguindo receitas tradicionais passadas por gerações.</p>
+                    <div class="chef-signature">
+                        <span>Heloisa Bolognesi</span>
+                        <p>Chef e Proprietária</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nosso Menu</h2>
+                <div class="divider"></div>
+                <p>Sabores autênticos da culinária italiana</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="antipasti">Antipasti</button>
+                <button class="menu-tab" data-tab="primi">Primi Piatti</button>
+                <button class="menu-tab" data-tab="secondi">Secondi Piatti</button>
+                <button class="menu-tab" data-tab="dolci">Dolci</button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-tab-content active" id="antipasti">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Bruschetta al Pomodoro</h3>
+                                <img src="./img/Carpaccio di Manzo 2.jpg" alt="">
+                                <span class="price">R$ 42</span>
+                            </div>
+                            <p>Pão italiano grelhado com tomates frescos, manjericão e azeite extra virgem</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Carpaccio di Manzo</h3>
+                                <span class="price">R$ 58</span>
+                            </div>
+                            <p>Finas fatias de filé mignon cru com rúcula, parmesão e molho de alcaparras</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Burrata con Prosciutto</h3>
+                                <span class="price">R$ 68</span>
+                            </div>
+                            <p>Burrata cremosa servida com presunto de Parma, tomates confitados e rúcula selvagem</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Calamari Fritti</h3>
+                                <span class="price">R$ 54</span>
+                            </div>
+                            <p>Lulas empanadas e fritas, servidas com molho marinara caseiro e limão</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-tab-content" id="primi">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Risotto ai Funghi Porcini</h3>
+                                <span class="price">R$ 78</span>
+                            </div>
+                            <p>Risoto cremoso com cogumelos porcini e finalizado com trufa negra</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Tagliatelle al Tartufo</h3>
+                                <span class="price">R$ 86</span>
+                            </div>
+                            <p>Massa fresca com creme de trufas brancas e lascas de parmesão envelhecido</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Spaghetti alle Vongole</h3>
+                                <span class="price">R$ 72</span>
+                            </div>
+                            <p>Espaguete com vôngoles frescas, alho, vinho branco, azeite e salsinha</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Ravioli di Ricotta e Spinaci</h3>
+                                <span class="price">R$ 68</span>
+                            </div>
+                            <p>Ravioli recheado com ricota e espinafre, servido com manteiga de sálvia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-tab-content" id="secondi">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Ossobuco alla Milanese</h3>
+                                <span class="price">R$ 120</span>
+                            </div>
+                            <p>Ossobuco de vitela cozido lentamente com legumes, ervas e vinho branco</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Branzino al Forno</h3>
+                                <span class="price">R$ 110</span>
+                            </div>
+                            <p>Robalo assado com ervas mediterrâneas, limão siciliano e azeite de oliva</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Saltimbocca alla Romana</h3>
+                                <span class="price">R$ 98</span>
+                            </div>
+                            <p>Escalopes de vitela com presunto de Parma e sálvia, salteados em manteiga e vinho branco</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Bistecca Fiorentina</h3>
+                                <span class="price">R$ 145</span>
+                            </div>
+                            <p>T-bone grelhado ao ponto, servido com batatas rústicas e legumes da estação</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-tab-content" id="dolci">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Tiramisù Classico</h3>
+                                <span class="price">R$ 38</span>
+                            </div>
+                            <p>Clássico italiano com camadas de biscoito champagne, café, mascarpone e cacau</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Panna Cotta ai Frutti di Bosco</h3>
+                                <span class="price">R$ 36</span>
+                            </div>
+                            <p>Creme de baunilha com calda de frutas vermelhas frescas</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Cannoli Siciliani</h3>
+                                <span class="price">R$ 42</span>
+                            </div>
+                            <p>Massa crocante recheada com creme de ricota, pistache e gotas de chocolate</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Gelato Artigianale</h3>
+                                <span class="price">R$ 32</span>
+                            </div>
+                            <p>Sorvete artesanal em três sabores: pistache, limão siciliano e chocolate amargo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sistema de Reservas -->
+    <section id="reservas" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Faça sua Reserva</h2>
+                <div class="divider"></div>
+                <p>Reserve sua mesa e garanta uma experiência gastronômica inesquecível</p>
+            </div>
+            
+            <div id="reservation-system">
+                <form id="reservation-form" novalidate>
+                    <!-- Seção 1: Dados Pessoais -->
+                    <div class="form-section">
+                        <h3>Dados Pessoais</h3>
+                        
+                        <div class="form-group">
+                            <label for="nome">Nome Completo*</label>
+                            <input type="text" id="nome" name="nome" required aria-required="true" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]{3,}" title="Por favor, insira seu nome completo (mínimo 3 caracteres)">
+                            <span class="error-message">Por favor, insira seu nome completo</span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" required aria-required="true">
+                                <span class="error-message">Por favor, insira um email válido</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefone">Telefone*</label>
+                                <input type="tel" id="telefone" name="telefone" required aria-required="true" pattern="[0-9\s$$$$\-\+]{10,}" title="Por favor, insira um número de telefone válido">
+                                <span class="error-message">Por favor, insira um telefone válido</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Seção 2: Data e Horário -->
+                    <div class="form-section">
+                        <h3>Data e Horário</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="data">Data da Reserva*</label>
+                                <input type="date" id="data" name="data" required aria-required="true" min="">
+                                <span class="error-message">Por favor, selecione uma data válida</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="horario">Horário da Reserva*</label>
+                                <select id="horario" name="horario" required aria-required="true">
+                                    <option value="">Selecione um horário</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                </select>
+                                <span class="error-message">Por favor, selecione um horário</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pessoas">Número de Pessoas*</label>
+                            <div class="range-container">
+                                <input type="range" id="pessoas" name="pessoas" min="1" max="10" value="2" required aria-required="true">
+                                <div class="range-value">2 pessoas</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Seção 3: Mesa e Preferências -->
+                    <div class="form-section">
+                        <h3>Mesa e Preferências</h3>
+                        
+                        <div class="form-group">
+                            <label>Escolha sua Mesa*</label>
+                            <div id="table-map">
+                                <div class="table-area">
+                                    <div class="table-row">
+                                        <div class="table" data-table="1">
+                                            <input type="radio" id="mesa-1" name="mesa" value="1" required aria-required="true">
+                                            <label for="mesa-1">1</label>
+                                        </div>
+                                        <div class="table" data-table="2">
+                                            <input type="radio" id="mesa-2" name="mesa" value="2">
+                                            <label for="mesa-2">2</label>
+                                        </div>
+                                        <div class="table" data-table="3">
+                                            <input type="radio" id="mesa-3" name="mesa" value="3">
+                                            <label for="mesa-3">3</label>
+                                        </div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table" data-table="4">
+                                            <input type="radio" id="mesa-4" name="mesa" value="4">
+                                            <label for="mesa-4">4</label>
+                                        </div>
+                                        <div class="table" data-table="5">
+                                            <input type="radio" id="mesa-5" name="mesa" value="5">
+                                            <label for="mesa-5">5</label>
+                                        </div>
+                                        <div class="table" data-table="6">
+                                            <input type="radio" id="mesa-6" name="mesa" value="6">
+                                            <label for="mesa-6">6</label>
+                                        </div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="table" data-table="7">
+                                            <input type="radio" id="mesa-7" name="mesa" value="7">
+                                            <label for="mesa-7">7</label>
+                                        </div>
+                                        <div class="table" data-table="8">
+                                            <input type="radio" id="mesa-8" name="mesa" value="8">
+                                            <label for="mesa-8">8</label>
+                                        </div>
+                                        <div class="table" data-table="9">
+                                            <input type="radio" id="mesa-9" name="mesa" value="9">
+                                            <label for="mesa-9">9</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-legend">
+                                    <div><span class="available"></span> Disponível</div>
+                                    <div><span class="selected"></span> Selecionada</div>
+                                    <div><span class="unavailable"></span> Indisponível</div>
+                                </div>
+                            </div>
+                            <span class="error-message">Por favor, selecione uma mesa</span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ocasiao">Ocasião Especial</label>
+                            <select id="ocasiao" name="ocasiao">
+                                <option value="">Selecione (opcional)</option>
+                                <option value="aniversario">Aniversário</option>
+                                <option value="casamento">Aniversário de Casamento</option>
+                                <option value="romantico">Jantar Romântico</option>
+                                <option value="negocios">Reunião de Negócios</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferencias">Preferências Gastronômicas</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="pref-massa" name="preferencias" value="massa">
+                                    <label for="pref-massa">Massas</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="pref-peixe" name="preferencias" value="peixe">
+                                    <label for="pref-peixe">Peixes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="pref-carne" name="preferencias" value="carne">
+                                    <label for="pref-carne">Carnes</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="pref-vinho" name="preferencias" value="vinho">
+                                    <label for="pref-vinho">Vinhos</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="restricoes">Restrições Alimentares</label>
+                            <textarea id="restricoes" name="restricoes" rows="3" placeholder="Informe se você tem alergias ou restrições alimentares"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="observacoes">Observações Adicionais</label>
+                            <textarea id="observacoes" name="observacoes" rows="3" placeholder="Alguma solicitação especial?"></textarea>
+                        </div>
+                        
+                        <div class="form-group terms-group">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="termos" name="termos" required aria-required="true">
+                                <label for="termos">Concordo com os <a href="#" class="terms-link">termos e condições</a> do restaurante*</label>
+                                <span class="error-message">Você deve concordar com os termos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Confirmar Reserva</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Feedback de sucesso (inicialmente oculto) -->
+                <div id="success-message" class="hidden">
+                    <div class="success-content">
+                        <div class="success-icon">✓</div>
+                        <h3>Reserva Confirmada!</h3>
+                        <p>Sua reserva foi realizada com sucesso. Enviamos um email de confirmação para <span id="confirmation-email"></span>.</p>
+                        <p>Agradecemos a preferência e esperamos recebê-lo em breve no Sabores da Terra!</p>
+                        <p class="reservation-code">Código da reserva: <strong id="reservation-code"></strong></p>
+                        <button type="button" class="btn" onclick="window.location.reload()">Nova Reserva</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contato</h2>
+                <div class="divider"></div>
+                <p>Entre em contato conosco</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Endereço</h3>
+                        <p>Rua das Oliveiras, 123 - Centro</p>
+                        <p>São Paulo - SP, 01310-000</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda a Sexta: 12h às 15h | 19h às 23h</p>
+                        <p>Sábados e Domingos: 12h às 16h | 19h às 00h</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Contato</h3>
+                        <p>Telefone: (11) 3456-7890</p>
+                        <p>Email: contato@saboresdaterra.com.br</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <div class="map-placeholder">Mapa do Restaurante</div>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Sabores da Terra</h2>
+                    <p>Culinária Italiana Autêntica</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservas">Reservas</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Sabores da Terra. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
